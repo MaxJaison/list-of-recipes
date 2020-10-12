@@ -1,8 +1,13 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import styled from 'styled-components'
+
+const Title = styled.h1`
+  font-size: 50px;
+  text-align: center;
+  color: ${({ theme }) => theme.colors.primary};
+`
 
 export default function Home() {
   return (
-    <div>Marley Spoon App</div>
+    <Title>Marley Spoon App</Title>
   )
 }
