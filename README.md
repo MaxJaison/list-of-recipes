@@ -9,5 +9,11 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To run test: 
+```bash
+npm run test
+```
+
+
+Open [http://localhost:3000/recipes](http://localhost:3000/recipes) with your browser to see the result.
 
