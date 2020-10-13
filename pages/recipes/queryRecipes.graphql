@@ -1,0 +1,22 @@
+query {
+    recipeCollection(where: { chef: { name_exists: true}}) {
+        items {
+            sys {
+                id
+            }
+            title
+            photo {
+                title
+                url(transform: {width: 150})
+            }
+            chef {
+                name
+            }
+            tagsCollection {
+                items {
+                    name
+                }
+            }
+        }
+    }
+}
