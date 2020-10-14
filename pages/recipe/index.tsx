@@ -1,5 +1,5 @@
-import React from "react";
+import React from 'react';
 
-export default function Recipe() {
-    return <h2>Hi form Recipe</h2>
+export default function Recipe(): JSX.Element {
+    return <h2>Hi form Recipe</h2>;
 }

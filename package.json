@@ -1,24 +1,52 @@
 {
-  "name": "marley-spoon-app",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "@apollo/client": "^3.2.3",
-    "graphql": "^15.3.0",
-    "next": "9.5.5",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "styled-components": "^5.2.0"
-  },
-  "devDependencies": {
-    "@types/node": "^14.11.8",
-    "@types/react": "^16.9.52",
-    "babel-plugin-styled-components": "^1.11.1",
-    "typescript": "^4.0.3"
-  }
+    "name": "marley-spoon-app",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "test": "jest",
+        "lint": "eslint --fix .",
+        "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+    },
+    "dependencies": {
+        "@apollo/client": "^3.2.3",
+        "graphql": "^15.3.0",
+        "jest": "^26.5.3",
+        "next": "9.5.5",
+        "react": "16.13.1",
+        "react-dom": "16.13.1",
+        "styled-components": "^5.2.0"
+    },
+    "devDependencies": {
+        "@testing-library/jest-dom": "^5.11.4",
+        "@testing-library/react": "^11.0.4",
+        "@types/node": "^14.11.8",
+        "@types/react": "^16.9.52",
+        "@typescript-eslint/eslint-plugin": "^4.4.1",
+        "@typescript-eslint/parser": "^4.4.1",
+        "babel-jest": "^26.5.2",
+        "babel-plugin-styled-components": "^1.11.1",
+        "eslint": "^7.11.0",
+        "eslint-plugin-jsx-a11y": "^6.3.1",
+        "eslint-plugin-prettier": "^3.1.4",
+        "eslint-plugin-react": "^7.21.4",
+        "eslint-plugin-react-hooks": "^4.1.2",
+        "jest-transform-graphql": "^2.1.0",
+        "prettier": "^2.1.2",
+        "react-test-renderer": "^16.13.1",
+        "ts-jest": "^26.4.1",
+        "typescript": "^4.0.3"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "./**/*.{js,jsx,ts,tsx}": [
+            "eslint --fix"
+        ]
+    }
 }

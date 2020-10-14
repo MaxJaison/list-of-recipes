@@ -1,4 +1,3 @@
-
 ## Getting Started
 
 First, run the development server:
@@ -9,11 +8,16 @@ npm run dev
 yarn dev
 ```
 
-To run test: 
+Open [http://localhost:3000/recipes](http://localhost:3000/recipes) with your browser to see the result.
+
+To run tests:
+
 ```bash
 npm run test
 ```
 
+To build app:
 
-Open [http://localhost:3000/recipes](http://localhost:3000/recipes) with your browser to see the result.
-
+```bash
+npm run build
+```
